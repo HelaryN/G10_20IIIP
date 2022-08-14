@@ -1,6 +1,8 @@
 var UrlLibros = 'http://localhost:90/G10_20/Controller/Libro.php?opc=GetLibros';
 
-//var UrlLibro = 'http://20.216.41.245:90/G10_20/Controller/Libro.php?opc=InsertLibro';
+//http://20.216.41.245:90/G10_20/Controller/Libro.php?opc=GetLibros
+
+var UrlInsertLibro = 'http://localhost:90/G10_20/Controller/Libro.php?opc=InsertLibro';
 
 //var UrlLibro = 'http://20.216.41.245:90/G10_20/Controller/Libro.php?opc=GetLibro';
 
@@ -25,6 +27,7 @@ function InicioLibreria(){
             var MiItems = reponse;
             var Valores = '';
 
+            //Iterar el conjunto de arreglos de la Api
             for(i=0; i < MiItems.length; i++){
                     //Construcción del HTML
                 Valores += '<tr>'+
@@ -43,5 +46,37 @@ function InicioLibreria(){
         }
 
     })
+}
+
+function InsertarLibro(){
+    var infoLibro = {
+        Cod_Libro :$('#Cod_Libro').val(),
+        Nombre_libro :$('#Nombre_libro').val(),
+        Nombre_escritor :$('#Nombre_escritor').val(),
+        FechaPublicacion :$('#FechaPublicacion').val(),
+        ISBN :$('#ISBN').val(),
+        Precio :$('#Precio').val(),
+        Editorial :$('#Editorial').val()
+    };
+
+    //Variable datosLibrosJson guardará la conversión de la cadena infoLibro a tipo JSON
+    var datosLibrosJson = JSON.stringify(infoLibro)
+
+    $.ajax({
+        url: UrlInsertLibro,
+        type: 'POST',
+        data: datosLibrosJson,
+        datatype: 'JSON',
+        contenttype: 'aplication/json',
+        success: function(reponse){
+            console.log(reponse);
+            alert('Libro agregado con éxito.');
+        },
+        error: function(textStatus, errorThrown) {
+            alert('Error al ingresar registro nuevo.' + textStatus + errorThrown)
+        }
+    });
+
+    alert('Aviso');
 }
 

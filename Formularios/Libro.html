@@ -53,7 +53,7 @@
 
                         </thead>
 
-                        <tbody id="DataLibros">
+                        <tbody id="DataLibros">    <!--Llamar la función creada con Java para insertar los registros de la tabla-->
                            
                         </tbody>
 
@@ -62,6 +62,47 @@
                 </div>
 
 
+            </div>
+
+        </div>
+        <div class="Formulario">
+            <div class="row">
+                <div class="col-12">
+                    <h3>
+                        Agregar registro de un libro nuevo.
+                    </h3>
+                </div>
+                <div class="col-12">
+                    <form class="libro">                     <!--Estructura del formulario-->
+
+                        <label for="">Código_Libro:</label>
+                        <input type="text" id="Cod_Libro" class="form-control" placeholder="Ingrese el código del libro: ">
+
+                        <label for="">Nombre_libro:</label>
+                        <input type="text" id="Nombre_libro" class="form-control" placeholder="Ingrese el nombre del libro: ">
+                        
+                        <label for="">Nombre_escritor:</label>
+                        <input type="text" id="Nombre_escritor" class="form-control" placeholder="Ingrese el nombre del escritor: ">
+                        
+                        <label for="">Fecha_Publicación:</label>
+                        <input type="text" id="FechaPublicacion" class="form-control" placeholder="Ingrese la fecha de publicación (aaaa-mm-dd): ">
+                        
+                        <label for="">ISBN:</label>
+                        <input type="text" id="ISBN" class="form-control" placeholder="Ingrese el ISBN: ">
+                        
+                        <label for="">Precio:</label>
+                        <input type="text" id="Precio" class="form-control" placeholder="Ingrese el precio del libro: ">
+                        
+                        <label for="">Editorial:</label>
+                        <input type="text" id="Editorial" class="form-control" placeholder="Ingrese la editorial: ">
+                        
+                        <hr>
+                        <div id="btnAgregarLibro">
+                            <input type="submit" id="btnAgregarLibro" onclick="InsertarLibro()" value="AGREGAR LIBRO" class="btn btn-link">
+                        </div>
+
+                    </form>
+                </div>
             </div>
 
         </div>
