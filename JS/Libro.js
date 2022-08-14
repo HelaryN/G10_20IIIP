@@ -54,7 +54,7 @@ function InicioLibreria(){
                     '</td>'+
 
                     '<td>'+  //Agregar un botón en la última columna eliminar 
-                    '<button class="btn btn-danger" onclick="EliminarLibro('+ MiItems[i].Cod_Libro +')">ELIMINAR</button'+
+                    '<button class="btn btn-link" onclick="EliminarLibro('+ MiItems[i].Cod_Libro +')">ELIMINAR</button'+
                     '</td>'+
 
 
