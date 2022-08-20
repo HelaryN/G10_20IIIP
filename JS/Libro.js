@@ -1,20 +1,37 @@
-var UrlLibros = 'http://localhost:90/G10_20/Controller/Libro.php?opc=GetLibros';
+//'http://localhost:5000/G10_20/Controller/Libro.php?opc=GetLibros';
+
+var UrlLibros = 'http://20.216.41.245:90/G10_20/Controller/Libro.php?opc=GetLibros';
 
 //http://localhost:90/G10_20/Controller/Libro.php?opc=GetLibros
-//
-var UrlInsertLibro = 'http://localhost:90/G10_20/Controller/Libro.php?opc=InsertLibro';
+//_________________________________________________________________________________________________________________
 
-//var UrlLibro = 'http://20.216.41.245:90/G10_20/Controller/Libro.php?opc=GetLibro';
+//var UrlInsertLibro = 'http://localhost:5000/G10_20/Controller/Libro.php?opc=InsertLibro';
 
-var UrlGetLibro = 'http://localhost:90/G10_20/Controller/Libro.php?opc=GetLibro';
+var UrlInsertLibro = 'http://20.216.41.245:90/G10_20/Controller/Libro.php?opc=InsertLibro';
 
-//var UrlLibro = 'http://20.216.41.245:90/G10_20/Controller/Libro.php?opc=DeleteLibro';
+//var UrlInsertLibro = 'http://localhost:90/G10_20/Controller/Libro.php?opc=InsertLibro';
+//_________________________________________________________________________________________________________________
 
-var UrlUpdateLibro = 'http://localhost:90/G10_20/Controller/Libro.php?opc=UpdateLibro';
+//var UrlGetLibro = 'http://localhost:5000/G10_20/Controller/Libro.php?opc=GetLibro';
 
-//var UrlLibro = 'http://20.216.41.245:90/G10_20/Controller/Libro.php?opc=UpdateLibro';
+var UrlGetLibro = 'http://20.216.41.245:90/G10_20/Controller/Libro.php?opc=GetLibro';
 
-var UrlEliminarLibro = 'http://localhost:90/G10_20/Controller/Libro.php?opc=DeleteLibro';
+//var UrlGetLibro = 'http://localhost:90/G10_20/Controller/Libro.php?opc=GetLibro';
+//_________________________________________________________________________________________________________________
+
+//var UrlEliminarLibro = 'http://localhost:5000/G10_20/Controller/Libro.php?opc=DeleteLibro';
+
+var UrlEliminarLibro = 'http://20.216.41.245:90/G10_20/Controller/Libro.php?opc=DeleteLibro';
+
+//var UrlEliminarLibro = 'http://localhost:90/G10_20/Controller/Libro.php?opc=DeleteLibro';
+//_________________________________________________________________________________________________________________
+
+//var UrlUpdateLibro = 'http://localhost:5000/G10_20/Controller/Libro.php?opc=UpdateLibro';
+
+var UrlUpdateLibro = 'http://20.216.41.245:90/G10_20/Controller/Libro.php?opc=UpdateLibro';
+
+//var UrlUpdateLibro = 'http://localhost:90/G10_20/Controller/Libro.php?opc=UpdateLibro';
+//_________________________________________________________________________________________________________________
 
 
 //___________Funcion anónima que se va a ejecutar cada vez que el documento esté listo//
